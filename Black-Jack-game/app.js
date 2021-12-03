@@ -17,3 +17,10 @@ else if (sum === 21)
     hasBlackJack = true;
 }
 
+else
+{
+    console.log("You're out of the the game !! 😭😭");
+    isaAlive = false;
+}
+
+message = "We're logging out";
