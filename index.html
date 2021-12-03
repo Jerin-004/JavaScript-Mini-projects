@@ -5,12 +5,18 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>Passenger counter app</title>
     </head>
 
     <body>
         <h1>People entered:</h1>
-        <h2 id="count">0</h2>
+        <h2 id="counter">0</h2>
+        <div class="wrapper">
+            <button id="increment-btn" onclick="increment()">COUNT</button>
+            <br/>
+            <button id="save-btn" onclick="save()">SAVE</button>
+        </div>
+        <p id="save-el">Previous entries: </p>
         <script src="app.js"></script>
     </body>
 </html>
