@@ -3,24 +3,31 @@ let secondCard = 10;
 let hasBlackJack = false;
 let isaAlive = true;
 let sum = firstCard + secondCard;
-let message = " ";
+let message = "";
+let messageEl= ;
+document.getElementById("message-el").textContent = messageEl
 
-if (sum < 21)
+
+function startGame()
 {
-    console.log("Do you want to draw a new card ? 🙂");
-    isaAlive = true;
-}
+    if (sum < 21)
+    {
+        message = "Do you want to draw a new card ? 🙂";
+        isaAlive = true;
+    }
 
-else if (sum === 21)
-{
-    console.log("WoooHooo!! You've got Blackjack!! 🤑🤑");
-    hasBlackJack = true;
-}
+    else if (sum === 21)
+    {
+        message = "WoooHooo!! You've got Blackjack!! 🤑🤑";
+        hasBlackJack = true;
+    }
 
-else
-{
-    console.log("You're out of the the game !! 😭😭");
-    isaAlive = false;
-}
+    else
+    {
+        message = "You're out of the the game !! 😭😭";
+        isaAlive = false;
+    }
 
-message = "We're logging out";
+    messageEl.textContent;
+    console.log(messageEl)
+}
