@@ -1,0 +1,82 @@
+body {
+    background-color: rgb(26, 26, 26);
+    color: white;
+}
+
+#head-container {
+    display: flex;
+}
+
+#main-heading {
+    padding-left: 19px;
+    font-family:'Courier New', Courier, monospace;
+}
+
+#change-mode-btn {
+    border: none;
+    font-size: 1.2em;
+    margin-top: 18px;
+    margin-bottom: 18px;
+    padding-right: 10px;
+    padding-left: 10px;
+    color: white;
+    background-color: rgb(26, 26, 26);
+}
+
+#change-mode-btn:hover {
+    background-color: rgb(53, 50, 50);
+    
+}
+
+#change-mode-btn:active {
+    background-color: rgb(68, 63, 63);
+}
+
+#type-area {
+    font-size: 3.5em;
+    margin-left: 90%;
+}
+
+#btn-column-1 {
+    display: flex;
+    margin-right: 9.5%;
+}
+
+#column-1-btn-1 {
+    border: none;
+    font-size: 1.2em;
+    padding: 4% 11%;
+    border-width: 1px;
+    color: white;
+    background-color: rgb(22, 22, 22);
+}
+
+#column-2-btn-2 {
+    border: none;
+    font-size: 1.2em;
+    margin-left: 1%;
+    padding: 4% 11%;
+    border-width: 1px;
+    color: white;
+    background-color: rgb(22, 22, 22);
+}
+
+#column-3-btn-3 {
+    border: none;
+    font-size: 1.2em;
+    margin-left: 1%;
+    padding: 4% 11%;
+    border-width: 1px;
+    color: white;
+    background-color: rgb(22, 22, 22);
+}
+
+#column-4-btn-4 {
+    border: none;
+    font-size: 1.2em;
+    margin-left: 1%;
+    border-width: 1px;
+    padding: 4% 8%;
+    color: white;
+    background-color: rgb(22, 22, 22);
+}

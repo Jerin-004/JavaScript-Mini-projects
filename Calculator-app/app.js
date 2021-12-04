@@ -1,0 +1,4 @@
+changeMode()
+{
+    null;
+}
