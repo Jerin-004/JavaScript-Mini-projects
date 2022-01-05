@@ -41,62 +41,57 @@ body {
 #key-btn-container {
     display: flex;
     flex-direction: column;
-    margin-right: 2px;
+    margin-right: 55px;
 }
 
 #btn-column-1 {
     display: flex;
-    margin-right: 9.5%;
-    margin-top: 5%;
-    margin-left: 0.9%;
+    flex-direction: row;
+    margin-top: 10px;
 }
 
 #btn-column-2 {
     display: flex;
-    margin-right: 9.5%;
-    margin-left: 0.9%;
+    flex-direction: row;
 }
 
 #btn-column-3 {
     display: flex;
-    margin-right: 9.5%;
-    margin-left: 0.9%;
+    flex-direction: row;
 }
 
 #btn-column-4 {
     display: flex;
-    margin-right: 9.5%;
-    margin-left: 0.9%;
+    flex-direction: row;
 }
 
 #btn-column-5 {
     display: flex;
-    margin-right: 9.5%;
-    margin-left: 0.9%;
+    flex-direction: row;
 }
 
 #btn-column-6 {
     display: flex;
-    margin-right: 9.5%;
-    margin-left: 0.9%;
+    flex-direction: row;
 }
 
 .column-1-btn-1 {
     border: none;
     font-size: 1.2em;
-    padding: 3rem 7.9rem;
+    font-size-adjust: 10;
     margin-bottom: 1%;
     border-width: 1px;
     color: white;
     background-color: rgb(17, 17, 17);
+    padding: 25px 8%;
 }
 
 .column-1-btn-2 {
     border: none;
     font-size: 1.2em;
+    padding: 25px 8%;
     margin-left: 1%;
     margin-bottom: 1%;
-    padding: 3rem 7.910rem;
     border-width: 1px;
     color: white;
     background-color: rgb(17, 17, 17);
@@ -107,7 +102,7 @@ body {
     font-size: 1.2em;
     margin-left: 1%;
     margin-bottom: 1%;
-    padding: 3rem 7.8rem;
+    padding: 25px 8%;
     border-width: 1px;
     color: white;
     background-color: rgb(17, 17, 17);
@@ -119,7 +114,7 @@ body {
     margin-left: 1%;
     margin-bottom: 1%;
     border-width: 1px;
-    padding: 3rem 10.3rem;
+    padding: 25px 8%;
     color: white;
     background-color: rgb(17, 17, 17);
 }
@@ -127,7 +122,6 @@ body {
 .column-2-btn-1 {
     border: none;
     font-size: 1.2em;
-    padding: 3rem 7.7rem;
     margin-bottom: 1%;
     border-width: 1px;
     color: white;
@@ -139,7 +133,6 @@ body {
     font-size: 1.2em;
     margin-left: 1%;
     margin-bottom: 1%;
-    padding: 3rem 5.01em;
     border-width: 1px;
     color: white;
     background-color: rgb(17, 17, 17);
@@ -150,7 +143,6 @@ body {
     font-size: 1.2em;
     margin-left: 1%;
     margin-bottom: 1%;
-    padding: 3rem 7.23rem;
     border-width: 1px;
     color: white;
     background-color: rgb(17, 17, 17);
@@ -158,11 +150,10 @@ body {
 
 .column-2-btn-4 {
     border: none;
-    font-size: 3em;
+    font-size: 1.2em;
     margin-left: 1%;
     margin-bottom: 1%;
     border-width: 1px;
-    padding: 1rem 10.2rem;
     color: white;
     background-color: rgb(17, 17, 17);
 }
@@ -170,7 +161,6 @@ body {
 .column-3-btn-1 {
     border: none;
     font-size: 1.2em;
-    padding: 3rem 8.1rem;
     margin-bottom: 1%;
     border-width: 1px;
     color: white;
@@ -182,7 +172,7 @@ body {
     font-size: 1.2em;
     margin-left: 1%;
     margin-bottom: 1%;
-    padding: 3rem 5.15em;
+    
     border-width: 1px;
     color: white;
     background-color:black;
@@ -193,7 +183,7 @@ body {
     font-size: 1.2em;
     margin-left: 1%;
     margin-bottom: 1%;
-    padding: 3rem 7.92rem;
+    
     border-width: 1px;
     color: white;
     background-color:black;
@@ -201,11 +191,11 @@ body {
 
 .column-3-btn-4 {
     border: none;
-    font-size: 3em;
+    font-size: 1.2em;
     margin-left: 1%;
     margin-bottom: 1%;
     border-width: 1px;
-    padding: 1rem 10.2rem;
+    
     color: white;
     background-color: rgb(17, 17, 17);
 }
@@ -213,7 +203,7 @@ body {
 .column-4-btn-1 {
     border: none;
     font-size: 1.2em;
-    padding: 3rem 8.1rem;
+    
     margin-bottom: 1%;
     border-width: 1px;
     color: white;
@@ -225,7 +215,7 @@ body {
     font-size: 1.2em;
     margin-left: 1%;
     margin-bottom: 1%;
-    padding: 3rem 5.15em;
+    
     border-width: 1px;
     color: white;
     background-color:black;
@@ -236,7 +226,7 @@ body {
     font-size: 1.2em;
     margin-left: 1%;
     margin-bottom: 1%;
-    padding: 3rem 7.92rem;
+    
     border-width: 1px;
     color: white;
     background-color:black;
@@ -244,11 +234,11 @@ body {
 
 .column-4-btn-4 {
     border: none;
-    font-size: 3em;
+    font-size: 1.2em;
     margin-left: 1%;
     margin-bottom: 1%;
     border-width: 1px;
-    padding: 1rem 10.2rem;
+    
     color: white;
     background-color: rgb(17, 17, 17);
 }
@@ -256,7 +246,7 @@ body {
 .column-5-btn-1 {
     border: none;
     font-size: 1.2em;
-    padding: 3rem 8.1rem;
+    
     margin-bottom: 1%;
     border-width: 1px;
     color: white;
@@ -268,7 +258,7 @@ body {
     font-size: 1.2em;
     margin-left: 1%;
     margin-bottom: 1%;
-    padding: 3rem 5.15em;
+    
     border-width: 1px;
     color: white;
     background-color:black;
@@ -279,7 +269,7 @@ body {
     font-size: 1.2em;
     margin-left: 1%;
     margin-bottom: 1%;
-    padding: 3rem 7.92rem;
+    
     border-width: 1px;
     color: white;
     background-color:black;
@@ -287,11 +277,11 @@ body {
 
 .column-5-btn-4 {
     border: none;
-    font-size: 3em;
+    font-size: 1.2em;
     margin-left: 1%;
     margin-bottom: 1%;
     border-width: 1px;
-    padding: 1rem 10.2rem;
+    
     color: white;
     background-color: rgb(17, 17, 17);
 }
@@ -299,7 +289,7 @@ body {
 .column-6-btn-1 {
     border: none;
     font-size: 1.2em;
-    padding: 3rem 7.69rem;
+    
     margin-bottom: 1%;
     border-width: 1px;
     color: white;
@@ -311,7 +301,7 @@ body {
     font-size: 1.2em;
     margin-left: 1%;
     margin-bottom: 1%;
-    padding: 3rem 5.15em;
+    
     border-width: 1px;
     color: white;
     background-color:black;
@@ -322,7 +312,7 @@ body {
     font-size: 1.2em;
     margin-left: 1%;
     margin-bottom: 1%;
-    padding: 3rem 8.05rem;
+    
     border-width: 1px;
     color: white;
     background-color:black;
@@ -330,11 +320,11 @@ body {
 
 .column-6-btn-4 {
     border: none;
-    font-size: 3em;
+    font-size: 1.2em;
     margin-left: 1%;
     margin-bottom: 1%;
     border-width: 1px;
-    padding: 1rem 10.2rem;
+    
     color: white;
     background-color: rgb(111, 25, 33);
 }
