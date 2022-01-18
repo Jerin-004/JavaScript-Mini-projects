@@ -1,4 +1,0 @@
-changeMode()
-{
-    null;
-}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="icon" href="images/windows-10-calculator-icon-3.jpg" type="image/icon type">
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- <script src="https://kit.fontawesome.com/e35e2dcbd7.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+        <link rel="stylesheet" href="style.css">
+        <title>Calculator</title>
+    </head>
+
+    <body>
+        <div id="main-container">
+            <div id="head-container">
+                <button id="change-mode-btn" onclick="changeMode()" >|||</button>
+                <h1 id="main-heading">Standard</h1>
+            </div>
+            <h1 id="type-area">0</h1>
+            <div id="key-btn-container">
+                <div id="btn-column-1">
+                    <button class="column-1-btn-1" id="column-1-btn-1-id"  onclick="return operators('%')">%</button>
+                    <button class="column-1-btn-2" id="column-1-btn-2-id" onclick="clearEverything()">CE</button>
+                    <button class="column-1-btn-3" id="column-1-btn-3-id"onclick="clearEverything()" >C</button>
+                    <button class="column-1-btn-4" id="column-1-btn-4-id" onclick="backSpace()"><img src="images/baseline_backspace_white_24dp.png"></button>
+                </div>
+                <div id="btn-column-2">
+                    <button class="column-2-btn-1" id="column-2-btn-1-id" onclick="return symbols('1/x')"><sup>1</sup>/<sub>x</sub></button>
+                    <button class="column-2-btn-2" id="column-2-btn-2-id" onclick="return symbols('x2')">x&#xB2;</button>
+                    <button class="column-2-btn-3" id="column-2-btn-3-id" onclick="return symbols('sqrt2')">&#xB2;&#x221A;x</button>
+                    <button class="column-2-btn-4" id="column-2-btn-4-id" onclick="return operators('&#xf7;')">&#xf7;</button>
+                </div>
+                <div id="btn-column-3">
+                    <button class="column-3-btn-1" id="column-3-btn-1-id"  onclick="return numbers('7')">7</button>
+                    <button class="column-3-btn-2" id="column-3-btn-2-id"  onclick="return numbers('8')">8</button>
+                    <button class="column-3-btn-3" id="column-3-btn-3-id"  onclick="return numbers('9')">9</button>
+                    <button class="column-3-btn-4" id="column-3-btn-4-id" onclick="return operators('&#xd7')">&#xd7;</button>
+                </div>
+                <div id="btn-column-4">
+                    <button class="column-4-btn-1" id="column-4-btn-1-id" onclick="return numbers('4')">4</button>
+                    <button class="column-4-btn-2" id="column-4-btn-2-id" onclick="return numbers('5')">5</button>
+                    <button class="column-4-btn-3" id="column-4-btn-3-id" onclick="return numbers('6')">6</button>
+                    <button class="column-4-btn-4" id="column-4-btn-4-id" onclick="return operators('&#8722')">&#8722;</button>
+                </div>
+                <div id="btn-column-5">
+                    <button class="column-5-btn-1" id="column-5-btn-1-id"  onclick="return numbers('1')">1</button>
+                    <button class="column-5-btn-2" id="column-5-btn-2-id" onclick="return numbers('2')">2</button>
+                    <button class="column-5-btn-3" id="column-5-btn-3-id" onclick="return numbers('3')">3</button>
+                    <button class="column-5-btn-4" id="column-5-btn-4-id" onclick="return operators('&#43')">&#43;</button>
+                </div>
+                <div id="btn-column-6">
+                    <button class="column-6-btn-1" id="column-6-btn-1-id"><sup>+</sup>/-</button>
+                    <button class="column-6-btn-2" id="column-6-btn-2-id" onclick="return numbers('0')">0</button>
+                    <button class="column-6-btn-3" id="column-6-btn-3-id">&#8226;</button>
+                    <button class="column-6-btn-4" id="column-6-btn-4-id" >=</button>
+                </div>
+            </div>
+        </div>
+        
+    </body>
+
+    <footer>
+        <div id="footer">
+            <div>
+                <h2 style="text-align: center; font-size: 1rem; font-family: S;">© copyright Jerin.co blah blah</h2>
+            </div> 
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+    <script  type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.3/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.3/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+        apiKey: "AIzaSyAdzZ8jHpHWYtSqyXtZ2y5Ch4b3tl1eDOQ",
+        authDomain: "windows-10-calculator-remake.firebaseapp.com",
+        projectId: "windows-10-calculator-remake",
+        storageBucket: "windows-10-calculator-remake.appspot.com",
+        messagingSenderId: "757229947792",
+        appId: "1:757229947792:web:c64d71400d2f1588538115",
+        measurementId: "G-LN3F6EC9QH"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+    </script>
+    
+</html>
