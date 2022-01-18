@@ -5,11 +5,28 @@
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ],
+    "headers": [
+      {
+        "source": "**/*.html",
+        "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "private, max-age=0, no-cache"
+        }
+      ]
+      }
     ]
   },
   "emulators": {
     "hosting": {
-      "port": 8000
+      "port": 800
     },
     "ui": {
       "enabled": true
