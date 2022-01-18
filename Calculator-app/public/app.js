@@ -30,7 +30,7 @@ let totalVal;
 function numbers(val) {
     value= val;
     document.getElementById("type-area").textContent += value;
-    totalVal = document.getElementById("type-area").innerText;
+    totalVal = document.getElementById("type-area").textContent;
 }
 
 
@@ -42,19 +42,20 @@ function operators(op) {
 function symbols(sy) {
 
     let answer = 0;
-    switch (sy) {
 
-        case '1/x':
-            answer = 1/totalVal;
-            document.getElementById("type-area").textContent = answer;
+    if (sy== '1/x') {
+        answer = 1/totalVal;
+        document.getElementById("type-area").textContent = answer;
+    }
 
-        case 'x2':
-            answer = totalVal **2;
-            document.getElementById("type-area").textContent = answer;
+    else if (sy == 'x2'){
+        answer = totalVal **2;
+        document.getElementById("type-area").textContent = answer;
+    }
 
-        case 'sqrt2':
-            answer = Math.sqrt(totalVal);
-            document.getElementById("type-area").textContent = answer;
+    else if(sy == 'sqrt2') {
+        answer = Math.sqrt(totalVal);
+        document.getElementById("type-area").textContent = answer;
 
     }
     
