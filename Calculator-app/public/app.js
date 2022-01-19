@@ -32,6 +32,7 @@ function numbers(val) {
     document.getElementById("type-area").textContent += value;
     totalVal = document.getElementById("type-area").textContent;
 }
+totalVal = value 
 
 
 
@@ -39,23 +40,27 @@ function operators(op) {
     document.getElementById("type-area").textContent += op;
 }
 
+let answer = 0;
 function symbols(sy) {
 
-    let answer = 0;
+
 
     if (sy== '1/x') {
         answer = 1/totalVal;
         document.getElementById("type-area").textContent = answer;
+        // answer = "0";
     }
 
     else if (sy == 'x2'){
         answer = totalVal **2;
         document.getElementById("type-area").textContent = answer;
+        // answer = "0";
     }
 
     else if(sy == 'sqrt2') {
         answer = Math.sqrt(totalVal);
         document.getElementById("type-area").textContent = answer;
+        // answer = "0";
 
     }
     
@@ -63,11 +68,13 @@ function symbols(sy) {
 }
 
 function clearEverything() {
-    document.getElementById("type-area").textContent = " ";
+    document.getElementById("type-area").textContent = "0";
+    totalVal = 0;
 }
 
 function backSpace() {
     document.getElementById("type-area").textContent = document.getElementById("type-area").textContent.substring(0,document.getElementById("type-area").textContent.length -1)
+    totalVal = '0';
 }
 
 
