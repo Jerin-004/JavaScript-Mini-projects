@@ -11,8 +11,10 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
         <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" href="style.css">
         <title>Calculator</title>
-
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8842131487110332"
+        crossorigin="anonymous"></script>
         <script type="module">
         // Import the functions you need from the SDKs you need
         import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.3/firebase-app.js";
@@ -39,6 +41,7 @@
     </head>
 
     <body>
+        <h2 id="main-info">You can use this web application in mobile</h2>
         <div id="main-container">
             <div id="head-container">
                 <button id="change-mode-btn" onclick="changeMode()" >|||</button>
@@ -50,25 +53,25 @@
                     <button class="column-1-btn-1" id="column-1-btn-1-id"  onclick="return operators('%')">%</button>
                     <button class="column-1-btn-2" id="column-1-btn-2-id" onclick="clearEverything()">CE</button>
                     <button class="column-1-btn-3" id="column-1-btn-3-id"onclick="clearEverything()" >C</button>
-                    <button class="column-1-btn-4" id="column-1-btn-4-id" onclick="backSpace()"><img src="images/baseline_backspace_white_24dp.png"></button>
+                    <button class="column-1-btn-4" id="column-1-btn-4-id" onclick="backSpace()"><span class="material-icons md-18">backspace</span></button>
                 </div>
                 <div id="btn-column-2">
                     <button class="column-2-btn-1" id="column-2-btn-1-id" onclick="return symbols('1/x')"><sup>1</sup>/<sub>x</sub></button>
                     <button class="column-2-btn-2" id="column-2-btn-2-id" onclick="return symbols('x2')">x&#xB2;</button>
                     <button class="column-2-btn-3" id="column-2-btn-3-id" onclick="return symbols('sqrt2')">&#xB2;&#x221A;x</button>
-                    <button class="column-2-btn-4" id="column-2-btn-4-id" onclick="return operators('&#xf7;')">&#xf7;</button>
+                    <button class="column-2-btn-4" id="column-2-btn-4-id" onclick="return operators('/')">&#xf7;</button>
                 </div>
                 <div id="btn-column-3">
                     <button class="column-3-btn-1" id="column-3-btn-1-id"  onclick="return numbers('7')">7</button>
                     <button class="column-3-btn-2" id="column-3-btn-2-id"  onclick="return numbers('8')">8</button>
                     <button class="column-3-btn-3" id="column-3-btn-3-id"  onclick="return numbers('9')">9</button>
-                    <button class="column-3-btn-4" id="column-3-btn-4-id" onclick="return operators('&#xd7')">&#xd7;</button>
+                    <button class="column-3-btn-4" id="column-3-btn-4-id" onclick="return operators('*')">&#xd7;</button>
                 </div>
                 <div id="btn-column-4">
                     <button class="column-4-btn-1" id="column-4-btn-1-id" onclick="return numbers('4')">4</button>
                     <button class="column-4-btn-2" id="column-4-btn-2-id" onclick="return numbers('5')">5</button>
                     <button class="column-4-btn-3" id="column-4-btn-3-id" onclick="return numbers('6')">6</button>
-                    <button class="column-4-btn-4" id="column-4-btn-4-id" onclick="return operators('&#8722')">&#8722;</button>
+                    <button class="column-4-btn-4" id="column-4-btn-4-id" onclick="return operators('-')">&#8722;</button>
                 </div>
                 <div id="btn-column-5">
                     <button class="column-5-btn-1" id="column-5-btn-1-id"  onclick="return numbers('1')">1</button>
@@ -79,8 +82,8 @@
                 <div id="btn-column-6">
                     <button class="column-6-btn-1" id="column-6-btn-1-id"><sup>+</sup>/-</button>
                     <button class="column-6-btn-2" id="column-6-btn-2-id" onclick="return numbers('0')">0</button>
-                    <button class="column-6-btn-3" id="column-6-btn-3-id">&#8226;</button>
-                    <button class="column-6-btn-4" id="column-6-btn-4-id" >=</button>
+                    <button class="column-6-btn-3" id="column-6-btn-3-id" onclick="return operators('.')">&#8226;</button>
+                    <button class="column-6-btn-4" id="column-6-btn-4-id" onclick="calculate()">=</button>
                 </div>
             </div>
         </div>

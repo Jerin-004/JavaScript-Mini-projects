@@ -22,7 +22,7 @@
 
 function changeMode()
 {
-    return null;  // under working progress
+    alert("InDev..");  // under working progress
 }
 
 let value;
@@ -46,37 +46,36 @@ function symbols(sy) {
 
 
     if (sy== '1/x') {
-        answer = 1/totalVal;
-        document.getElementById("type-area").textContent = answer;
-        // answer = "0";
+        totalVal = 1/totalVal;
+        document.getElementById("type-area").textContent = totalVal;
     }
 
     else if (sy == 'x2'){
-        answer = totalVal **2;
-        document.getElementById("type-area").textContent = answer;
-        // answer = "0";
+        totalVal = totalVal **2;
+        document.getElementById("type-area").textContent = totalVal;
     }
 
     else if(sy == 'sqrt2') {
-        answer = Math.sqrt(totalVal);
-        document.getElementById("type-area").textContent = answer;
-        // answer = "0";
-
+        totalVal = Math.sqrt(totalVal);
+        document.getElementById("type-area").textContent = totalVal;
     }
     
     
 }
 
 function clearEverything() {
-    document.getElementById("type-area").textContent = "0";
+    document.getElementById("type-area").textContent = " ";
     totalVal = 0;
 }
 
 function backSpace() {
-    document.getElementById("type-area").textContent = document.getElementById("type-area").textContent.substring(0,document.getElementById("type-area").textContent.length -1)
-    totalVal = '0';
+    document.getElementById("type-area").textContent = document.getElementById("type-area").textContent.substring(0,document.getElementById("type-area").textContent.length -1);
 }
 
+function calculate() {
+   totalVal = eval(document.getElementById("type-area").textContent);
+   document.getElementById("type-area").textContent = totalVal;
+}
 
 // class Calculator {
 //   constructor(previousOperandTextElement, currentOperandTextElement) {
