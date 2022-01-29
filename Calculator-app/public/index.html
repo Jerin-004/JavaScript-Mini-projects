@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <link rel="icon" href="images/windows-10-calculator-icon-3.jpg" type="image/icon type">
-        
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8842131487110332" crossorigin="anonymous"></script>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -47,11 +47,11 @@
                 <button id="change-mode-btn" onclick="changeMode()" >|||</button>
                 <h1 id="main-heading">Standard</h1>
             </div>
-            <div><h1 id="type-area">0</h1></div>
+            <div id="text-area-container z-depth-1"><input type="text" id="type-area" placeholder="0" value="" disabled /></div>
             <div id="key-btn-container">
                 <div id="btn-column-1">
-                    <button class="column-1-btn-1" id="column-1-btn-1-id"  onclick="return operators('%')">%</button>
-                    <button class="column-1-btn-2" id="column-1-btn-2-id" onclick="clearEverything()">CE</button>
+                    <button class="column-1-btn-1 btn" id="column-1-btn-1-id" onclick="return operators('%')">%</button>
+                    <button class="column-1-btn-2 btn id="column-1-btn-2-id" onclick="clearEverything()">CE</button>
                     <button class="column-1-btn-3" id="column-1-btn-3-id"onclick="clearEverything()" >C</button>
                     <button class="column-1-btn-4" id="column-1-btn-4-id" onclick="backSpace()"><span class="material-icons md-18">backspace</span></button>
                 </div>
