@@ -1,0 +1,18 @@
+{
+    "manifest_version": 3,
+    "version": "2.0",
+    "name" : "Website link saver",
+    "action" : {
+        "default_popup" : "index.html",
+        "default_icon" : "images/link.png"
+    },
+    "icons": { "16": "images/link.png",
+               "48": "images/link.png",
+               "128": "images/link.png" },
+
+    "description":"This website link saver is used for temporary purposes only like saving your lead's account website or even you use it as a bookmark also.",
+    "permissions": [
+        "tabs"
+    ]
+    
+}
